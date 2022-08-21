@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+package pb;
+
+
+
+message GetUserInfoReq{
+    int64 id = 1;
+}
+
+message GetUserInfoResp{
+    int64 id=1;
+    string nickname=2;
+    string mobile=3;
+}
+
+message GetUserCreateReq{
+    string nickname=1;
+    string mobile=2;
+    string data=3;
+}
+message GetUserCreateResp{
+    bool flag=1;
+}
+
+//service 每一个proto文件下只能有一个service
+service UserCenter {
+    rpc GetUserInfo(GetUserInfoReq) returns(GetUserInfoResp);
+    rpc getUserCreate(GetUserCreateReq) returns(GetUserCreateResp);
+}

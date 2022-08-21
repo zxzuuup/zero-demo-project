@@ -1,0 +1,26 @@
+Name: user.rpc
+ListenOn: 127.0.0.1:8080
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: user.rpc
+
+Mode:
+  "test"
+
+Log:
+  ServiceName: user-api
+  Mode: file
+  Path: logs
+  Level: info
+  Encoding: plain
+  Compress: true
+  KeepDays: 7
+
+
+Mysql:
+  DataSource: root:root@tcp(127.0.0.1:3306)/user_demo_project?charset=utf8&parseTime=true&loc=Asia%2FShanghai
+
+Cache:
+  - Host: 127.0.0.1:6379
+    Pass:

@@ -1,0 +1,9 @@
+Name: user-api
+Host: 0.0.0.0
+Port: 8888
+
+UserConf:
+  Etcd:
+    Hosts:
+      - 0.0.0.0:2379
+    Key: user.rpc

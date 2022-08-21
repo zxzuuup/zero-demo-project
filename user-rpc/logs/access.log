@@ -1,0 +1,8 @@
+logs/stat.log-2022-08-21.gz00	[34;1m info [0m	compressing log file: logs/stat.log-2022-08-21	caller=logx/rotatelogger.go:403
+logs/access.log-2022-08-21.gz	[34;1m info [0m	compressing log file: logs/access.log-2022-08-21	caller=logx/rotatelogger.go:403
+logs/access.log-*.gz301+08:00	[34;1m info [0m	compressed log file: logs/access.log-2022-08-21, took 3.235316ms	caller=logx/rotatelogger.go:407
+logs/stat.log-*.gz4.301+08:00	[34;1m info [0m	compressed log file: logs/stat.log-2022-08-21, took 5.593347ms	caller=logx/rotatelogger.go:407
+2022-08-22T00:02:39.782+08:00	[34;1m info [0m	127.0.0.1:39434 - /pb.UserCenter/GetUserInfo - {"id":1}	duration=11.7ms	trace=39a9caee1908ff1f02cc14f3ad9045e2	span=d151c95bff8f8fc1	caller=serverinterceptors/statinterceptor.go:74
+2022-08-22T00:11:39.114+08:00	[34;1m info [0m	127.0.0.1:60018 - /pb.UserCenter/GetUserInfo - {"id":1}	duration=2.9ms	trace=7d5e7cd02a1bca74d3f053225f0920ee	span=7c484d5e12a75440	caller=serverinterceptors/statinterceptor.go:74
+2022-08-22T00:12:13.907+08:00	[34;1m info [0m	127.0.0.1:35954 - /pb.UserCenter/GetUserInfo - {"id":1}	duration=1.3ms	trace=8e0bf39cd8b551b4797972b080ef880c	span=7be08d4b4a08bdfd	caller=serverinterceptors/statinterceptor.go:74
+2022-08-22T00:23:50.786+08:00	[34;1m info [0m	127.0.0.1:42466 - /pb.UserCenter/GetUserInfo - {"id":1}	duration=1.0ms	trace=738594f1f178029a02fee988c6ab7ce2	span=4900ed18d5643690	caller=serverinterceptors/statinterceptor.go:74
